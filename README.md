@@ -50,7 +50,28 @@ Esto lo hacemos con el Intent en el main activity:
         String tmp = bundle.getString("valor");
         textoDolares.setText(String.valueOf(tmp)); 
 ```
+Cambiamos los nombres y los id de los atributos como proceda. Después para el calculo, 
+obviamente tiene que ser la division en vez de multiplicar los valores:
 
+ ```
+  buttonConvert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Creamos un String temporal por si el usuario no introduce nada, aparece un mensaje
+                String tmp = textoDolares.getText().toString();
+
+                if (tmp.equalsIgnoreCase("")) {
+                    Toast.makeText(getApplicationContext(), "Introduzca una Cantidad", Toast.LENGTH_SHORT).show();
+                } else {
+
+                    double d = Double.parseDouble(String.valueOf(textoDolares.getText()));
+                    double resultado = d / 1.22600;
+                    textoEuro.setText(String.valueOf(df2.format(resultado)));
+                }
+            }
+        });
+  
+ ```
 En el segundo Activity no creamos un Intent, sino usamos el metodo finish(). 
 Esto para evitar que se vayan cargando las activities sin destruir los anteriores que llenaría la memoria sin necesidad:
 
