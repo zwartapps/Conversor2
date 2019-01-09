@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Conversor2</string>
+    <string name="cantidad">Introduzca Cantidad:</string>
+    <string name="euros">Euros</string>
+    <string name="symbolEuro">€</string>
+    <string name="symbolDollar"> $</string>
+    <string name="result">Resultado:</string>
+    <string name="dollar">USD</string>
+    <string name="botonconvert">Convertir</string>
+    <string name="botonreset">Borrar</string>
+    <string name="dollareuro">Conversor Dolares-Euros</string>
+    <string name="eurodollar">Conversor Euros-Dolares</string>
+    <string name="title1">Euros a Dolares</string>
+    <string name="title2">Dolares a Euros</string>
+</resources>
