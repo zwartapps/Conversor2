@@ -67,5 +67,6 @@ Esto para evitar que se vayan cargando las activities sin destruir los anteriore
  
  <img src="http://i68.tinypic.com/24dov9y.jpg">
  
+ ### Todo funciona correctamente!
  
  
